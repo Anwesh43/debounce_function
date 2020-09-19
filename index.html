@@ -1,0 +1,11 @@
+<body>
+    <input type = "text" id = "type">
+    <script src = "debounce_util.js">
+    </script>
+    <script>
+        const typeText = document.getElementById('type')
+        typeText.onkeyup = debounce(() => {
+            alert(typeText.value)
+        }, 2000)
+    </script>
+</body>   
